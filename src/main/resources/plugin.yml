@@ -1,0 +1,11 @@
+name: BossPoints
+version: '${project.version}'
+main: com.unclecole.bosspoints.BossPoints
+prefix: BossPoints
+authors: [ Cole ]
+depend: [ RedLib, PlaceholderAPI ]
+commands:
+  gamepoints:
+    aliases:
+      - store
+      - gp

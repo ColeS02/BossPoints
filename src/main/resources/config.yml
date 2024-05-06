@@ -1,0 +1,1261 @@
+Store:
+  Description:
+    - '%product_description%'
+    - '&7Price: &f%product_price_final%'
+  Purchase:
+    Format:
+      Already_Have:
+        - '&cYou already have purchased this product!'
+      Cooldown:
+        - '&6You can purchase again in: &e%product_cooldown%'
+      Available:
+        - '&aClick to purchase!'
+
+#List of Stores Menu
+Stores:
+  Title: Points Store
+  Size: 9
+  crate_keys:
+    Item:
+      Material: 'TRIPWIRE_HOOK'
+      Name: '&b&lKeys'
+      Lore:
+        - '&7Buy crate keys here!'
+        - '&bGamePoints &7Can be &bearned &7or &bpurchased!'
+
+    Amount: 1
+    Slot: 3
+    Pages: 1
+  boosters:
+    Item:
+      Material: 'GOLD_INGOT'
+      Name: '&b&lSell/Token Boosters'
+      Lore:
+        - '&7Buy a &bSell and Token &7booster!'
+
+    Amount: 1
+    Slot: 2
+    Pages: 1
+  tags:
+    Item:
+      Material: 'NAME_TAG'
+      Name: '&b&lTags'
+      Lore:
+        - '&bGet &7yourself a &bCool &7tag!'
+
+    Amount: 1
+    Slot: 7
+    Pages: 1
+  pet:
+    Item:
+      Material: 'LEASH'
+      Name: '&b&lPets'
+      Lore:
+        - '&7Have a &bFriend &7follow you &bAround!'
+
+    Amount: 1
+    Slot: 5
+    Pages: 1
+  nick:
+    Item:
+      Material: 'INK_SACK'
+      Name: '&b&lColored chat and nick'
+      Lore:
+        - '&bGet &7all the color chats! or &b/nick!'
+
+    Amount: 1
+    Slot: 6
+    Pages: 1
+  battlepass:
+    Item:
+      Material: 'BOOK'
+      Name: '&b&lRanks'
+      Lore:
+        - '&8- &7Get our donor &branks &7and &bsupport &7the server!'
+        - '&8- &b/Ranks &7for perks info'
+    Amount: 1
+    Slot: 1
+    Pages: 1
+  perms:
+    Item:
+      Material: 'COMPASS'
+      Name: '&b&lPERKS &4/ &b&lVOUCHERS'
+      Lore:
+        - '&8- &bBuy &7special perks with &bGamePoints!'
+        - '&8- &bBuy &7special Vouchers with &bGamePoints!'
+    Amount: 1
+    Slot: 4
+    Pages: 1
+
+Products:
+  battlepass:
+    Title: Points Store
+    Size: 27
+    rank1:
+      Name: '§eDuke'
+      Description:
+        - '&a/BUY AND CLAIM! THIS RANK IS FREE.'
+      Price: 1400
+      Preview:
+        Material: BOOK
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'msg %player% &a/BUY AND CLAIM! THIS RANK IS FREE'
+      Store:
+        Page: 1
+        Slot: 10
+    rank2:
+      Name: '&aBaron'
+      Description:
+        - '&7Buy gamepoints from /buy! or earn them ingame!&7.'
+      Price: 2400
+      Preview:
+        Material: BOOK
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% parent add baron'
+      Store:
+        Page: 1
+        Slot: 12
+    rank3:
+      Name: '&5Noble'
+      Description:
+        - '&7Buy gamepoints from /buy! or earn them ingame!&7.'
+      Price: 4400
+      
+      Preview:
+        Material: BOOK
+        Amount: 1
+        Enchanted: true
+        
+      Rewards:
+        Commands:
+          - 'lp user %player% parent add noble'
+      Store:
+        Page: 1
+        Slot: 14
+    rank4:
+      Name: '&bMaster'
+      Description:
+        - '&7Buy gamepoints from /buy! or earn them ingame!&7.'
+      Price: 6400
+      
+      Preview:
+        Material: BOOK
+        Amount: 1
+        Enchanted: true
+        
+      Rewards:
+        Commands:
+          - 'lp user %player% parent add master'
+      Store:
+        Page: 1
+        Slot: 16
+    rank5:
+      Name: '&6&lEmperor'
+      Description:
+        - '&7Buy gamepoints from /buy! or earn them ingame!&7.'
+      Price: 8400
+      
+      Preview:
+        Material: BOOK
+        Amount: 1
+        Enchanted: true
+        
+      Rewards:
+        Commands:
+          - 'lp user %player% parent add emperor'
+      Store:
+        Page: 1
+        Slot: 22
+  boosters:
+    Title: Booster Store
+    Size: 27
+    sell:
+      Name: '&a&n5x'
+      Description:
+        - '&7Gives you a &c4 hour &7sell boost!'
+      Price: 800
+      Preview:
+        Material: GOLD_INGOT
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'sellbooster give %player% 5 14400 personal'
+      Store:
+        Page: 1
+        Slot: 2
+    sell2:
+      Name: '&a&n10x'
+      Description:
+        - '&7Gives you a &c4 hours &7sell boost!'
+      Price: 1000
+      Preview:
+        Material: GOLD_INGOT
+        Amount: 2
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'sellbooster give %player% 10 14400 personal'
+      Store:
+        Page: 1
+        Slot: 3
+    sell3:
+      Name: '&a&n15x'
+      Description:
+        - '&7Gives you a &c4 hour &7sell boost!'
+      Page: 1
+      Price: 1400
+      Preview:
+        Material: GOLD_INGOT
+        Amount: 3
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'sellbooster give %player% 15 14400 personal'
+      Store:
+        Page: 1
+        Slot: 4
+    sell4:
+      Name: '&a&n20x'
+      Description:
+        - '&7Gives you a &c4 hour &7sell boost!'
+      Page: 1
+      Price: 2000      
+      Preview:
+        Material: GOLD_INGOT
+        Amount: 4
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'sellbooster give %player% 20 14400 personal'
+      Store:
+        Page: 1
+        Slot: 5
+    sell5:
+      Name: '&a&n40x'
+      Description:
+        - '&7Gives you a &c4 hour &7sell boost!'
+      Page: 1
+      Price: 2200      
+      Preview:
+        Material: GOLD_INGOT
+        Amount: 5
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'sellbooster give %player% 40 14400 personal'
+      Store:
+        Page: 1
+        Slot: 6
+    token:
+      Name: '&a&n2x'
+      Description:
+        - '&7Gives you a &c2 hour &7token boost!'
+      Price: 1400      
+      Preview:
+        Material: DOUBLE_PLANT
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'tokenbooster give %player% 2 7200 personal'
+      Store:
+        Page: 1
+        Slot: 19
+    token2:
+      Name: '&a&n3x'
+      Description:
+        - '&7Gives you a &c4 hours &7token boost!'
+      Price: 2000     
+      Preview:
+        Material: DOUBLE_PLANT
+        Amount: 2
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'tokenbooster give %player% 3 14400 personal'
+      Store:
+        Page: 1
+        Slot: 21
+    token3:
+      Name: '&a&n4x'
+      Description:
+        - '&7Gives you a &c4 hour &7token boost!'
+      Page: 1
+      Price: 2500      
+      Preview:
+        Material: DOUBLE_PLANT
+        Amount: 3
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'tokenbooster give %player% 4 14400 personal'
+      Store:
+        Page: 1
+        Slot: 23
+    token4:
+      Name: '&a&n6x'
+      Description:
+        - '&7Gives you a &c4 hour &7token boost!'
+      Page: 1
+      Price: 3000      
+      Preview:
+        Material: DOUBLE_PLANT
+        Amount: 4
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'tokenbooster give %player% 6 14400 personal'
+      Store:
+        Page: 1
+        Slot: 25
+  crate_keys:
+    Title: Points Store
+    Size: 27
+    Rare:
+      Name: '&a&nElite'
+      Description:
+        - '&7Gives you key for the &aElite Crate&7.'
+      Price: 500   
+      Preview:
+        Material: TRIPWIRE_HOOK
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'cloudcrates givephys %player% Elite'
+      Store:
+        Page: 1
+        Slot: 10
+    token:
+      Name: '&e&nMythic Key'
+      Description:
+        - '&7Gives you key for the &eMythic Crate&7.'
+      Price: 1200     
+      Preview:
+        Material: TRIPWIRE_HOOK
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'cloudcrates givephys %player% Mythic'
+      Store:
+        Page: 1
+        Slot: 12
+    enchantslot:
+      Name: '&d&nOmega Key'
+      Description:
+        - '&7Gives you key for the &dOmega Crate&7.'
+      Page: 1
+      Price: 1000     
+      Preview:
+        Material: TRIPWIRE_HOOK
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'cloudcrates givephys %player% Omega'
+      Store:
+        Page: 1
+        Slot: 14
+    monthly:
+      Name: '&d&nToken'
+      Description:
+        - '&7Gives Token crate'
+      Page: 1
+      Price: 1400
+      Preview:
+        Material: TRIPWIRE_HOOK
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'cloudcrates givephys %player% Token'
+      Store:
+        Page: 1
+        Slot: 16
+    energy:
+      Name: '&d&nEnergy'
+      Description:
+        - '&7Gives Energy crate'
+      Page: 1
+      Price: 1200
+      Preview:
+        Material: TRIPWIRE_HOOK
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'cloudcrates givephys %player% energy'
+      Store:
+        Page: 1
+        Slot: 21
+    monthly2:
+      Name: '&d&nMonthly'
+      Description:
+        - '&7Gives Monthly crate'
+      Page: 1
+      Price: 1500
+      Preview:
+        Material: TRIPWIRE_HOOK
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'cloudcrates givephys %player% monthly'
+      Store:
+        Page: 1
+        Slot: 23
+  nick:
+    Title: Points Store
+    Size: 27
+    Coloredchat:
+      Name: '&cColored Chat'
+      Description:
+        - '&7Acess this by doing &a/chatcolor'
+      Price: 1700
+      Preview:
+        Material: INK_SACK
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set chatcolor.aqua'
+          - 'lp user %player% permission set chatcolor.black'
+          - 'lp user %player% permission set chatcolor.blue'
+          - 'lp user %player% permission set chatcolor.cyan'
+          - 'lp user %player% permission set chatcolor.dark_green'
+          - 'lp user %player% permission set chatcolor.dark_red'
+          - 'lp user %player% permission set chatcolor.gold'
+          - 'lp user %player% permission set chatcolor.gray'
+          - 'lp user %player% permission set chatcolor.pink'
+          - 'lp user %player% permission set chatcolor.green'
+          - 'lp user %player% permission set chatcolor.purple'
+          - 'lp user %player% permission set chatcolor.red'
+          - 'lp user %player% permission set chatcolor.yellow'
+          - 'lp user %player% permission set chatcolor.use'
+      Store:
+        Page: 1
+        Slot: 0
+    nick:
+      Name: '&b/nick without color'
+      Description:
+        - '&BCOMING SOON!'
+      Price: 900
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set essentials.nick'
+      Store:
+        Page: 1
+        Slot: 1
+    nick2:
+      Name: '&b/nick with color'
+      Description:
+        - '&BCOMING SOON!'
+      Price: 1600
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set essentials.nick'
+          - 'lp user %player% permission set essentials.nick.color'
+      Store:
+        Page: 1
+        Slot: 2
+    nick3:
+      Name: '&b/nick with formats'
+      Description:
+        - '&BCOMING SOON!'
+      Price: 2000
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set essentials.nick.format'
+          - 'lp user %player% permission set essentials.nick'
+          - 'lp user %player% permission set essentials.nick.color'
+      Store:
+        Page: 1
+        Slot: 3
+  perms:
+    Title: Points Store
+    Size: 27
+    pv1:
+      Name: '&a&l1 Private Vault'
+      Description:
+        - '&7Use this to &bstore items! &7/privatevault 1'
+      Price: 800
+      Preview:
+        Material: CHEST
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set playervaults.amount.1'
+      Store:
+        Page: 1
+        Slot: 0
+    pv2:
+      Name: '&a&l2 Private Vaults'
+      Description:
+        - '&7Use this to &bstore items! &7/privatevault 1,2'
+      Price: 1200
+      Preview:
+        Material: ENDER_CHEST
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set playervaults.amount.2'
+      Store:
+        Page: 1
+        Slot: 1
+    durib:
+      Name: '&a&lDurability Alert'
+      Description:
+        - '&7This &bPerk &7alerts you when your armor or tools about to &bbreak'
+        - '&7To turn this &bFeature &7on do &b/da toggle'
+      Price: 2500
+      Preview:
+        Material: EXP_BOTTLE
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set durabilityalert.command'
+      Store:
+        Page: 1
+        Slot: 2
+    fish1:
+      Name: '&a&lFish Lure Voucher'
+      Description:
+        - '&7Mythical Lure &b10%&4/&b%100'
+        - '&7Platinum lure &b20%&4/&b%100'
+        - '&7Crab Lure &b30%&4/&b%100'
+        - '&7Dolphin Tail x2 &b140%&4/&b%100'
+      Price: 200
+      Preview:
+        Material: PAPER
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'Vouchers give fishlures 1 %player%'
+      Store:
+        Page: 1
+        Slot: 3
+    fish2:
+      Name: '&a&lFish Booster Voucher'
+      Description:
+        - '&7Entopy booster &cx1.5 &b40%&4/&b%100'
+        - '&7Entopy booster &cx1.75 &b15%&4/&b%100'
+        - '&7Entopy booster &cx2 &b5%&4/&b%100'
+        - '&7Entropy Crystal &b40%&4/&b%100'
+      Price: 400
+      Preview:
+        Material: PAPER
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'Vouchers give fishboosters 1 %player%'
+      Store:
+        Page: 1
+        Slot: 4
+    fishkit:
+      Name: '&a&lFish Rod Voucher'
+      Description:
+        - '&7Legend Rod &b50%&4/&b%100'
+        - '&7Mythic Rod &b40%&4/&b%100'
+        - '&7Pyro Rod &b10%&4/&b%100'
+      Price: 500
+      Preview:
+        Material: PAPER
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'Vouchers give fishkits 1 %player%'
+      Store:
+        Page: 1
+        Slot: 5
+    EnchantSlot:
+      Name: '&a&lGet an enchant slot!'
+      Description:
+        - '&7Add more slots to your pickaxe!'
+      Price: 1000
+      Preview:
+        Material: NETHER_STAR
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'enchantslot %player% 1'
+      Store:
+        Page: 1
+        Slot: 6
+    MineHouse:
+      Name: '&a&lUnlock House!'
+      Description:
+        - '&7Be able to edit the house at your mine!'
+      Price: 2500
+      Preview:
+        Material: NETHER_STAR
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'give %player% bedrock 1 name:&6&Ldo_not_lose_this!_make_a_ticket'
+      Store:
+        Page: 1
+        Slot: 7
+  pet:
+    Title: Points Store
+    Size: 27
+    axolotl:
+      Name: '&cAxolotl'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 500
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.axolotl'
+      Store:
+        Page: 1
+        Slot: 0
+    Bat:
+      Name: '&cBat'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 200
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.bat'
+      Store:
+        Page: 1
+        Slot: 1
+    Bee:
+      Name: '&cBee'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 200
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.Bee'
+      Store:
+        Page: 1
+        Slot: 2
+    Blaze:
+      Name: '&cBlaze'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 200
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.blaze'
+      Store:
+        Page: 1
+        Slot: 3
+    Cat:
+      Name: '&cCat'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 200
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.cat'
+      Store:
+        Page: 1
+        Slot: 4
+    CaveSpider:
+      Name: '&cCave Spider'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 200
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.cavespider'
+      Store:
+        Page: 1
+        Slot: 5
+    chicken:
+      Name: '&cChicken'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 200
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.chicken'
+      Store:
+        Page: 1
+        Slot: 5
+    Cow:
+      Name: '&cCow'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 200
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.Cow'
+      Store:
+        Page: 1
+        Slot: 6
+    creeper:
+      Name: '&cCreeper'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 200
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.Creeper'
+      Store:
+        Page: 1
+        Slot: 6
+    Donkey:
+      Name: '&cCreeper'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 200
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.Creeper'
+      Store:
+        Page: 1
+        Slot: 7
+    ElderGuardian:
+      Name: '&cElder Guardian'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 500
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.ElderGuardian'
+      Store:
+        Page: 1
+        Slot: 8
+    Enderman:
+      Name: '&cEnderman'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 200
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.Enderman'
+      Store:
+        Page: 1
+        Slot: 9
+    Fox:
+      Name: '&cFox'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 200
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.Fox'
+      Store:
+        Page: 1
+        Slot: 10
+    Giant:
+      Name: '&cGiant'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 800
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.Giant'
+      Store:
+        Page: 1
+        Slot: 11
+    Horse:
+      Name: '&cHorse'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 200
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.Horse'
+      Store:
+        Page: 1
+        Slot: 12
+    Irongolem:
+      Name: '&cIron Golem'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 800
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.Irongolem'
+      Store:
+        Page: 1
+        Slot: 5
+    Llama:
+      Name: '&cLlama'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 200
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.Llama'
+      Store:
+        Page: 1
+        Slot: 13
+    Panda:
+      Name: '&cPanda'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 500
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.Panda'
+      Store:
+        Page: 1
+        Slot: 14
+    Parrot:
+      Name: '&cParrot'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 1000
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.Parrot'
+      Store:
+        Page: 1
+        Slot: 15
+    Phantom:
+      Name: '&cPhantom'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 1400
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.Phantom'
+      Store:
+        Page: 1
+        Slot: 16
+    Turtle:
+      Name: '&cTurtle'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 800
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.Turtle'
+      Store:
+        Page: 1
+        Slot: 17
+    all:
+      Name: '&cAll mobs 40+'
+      Description:
+        - '&7Acess this pet in &a/pets'
+      Price: 3400
+      Preview:
+        Material: EGG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set pet.type.*'
+      Store:
+        Page: 1
+        Slot: 18
+  tags:
+    Title: Points Store
+    Size: 27
+    Duelist:
+      Name: '&8[&c&lDuelist&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.duelist'
+      Store:
+        Page: 1
+        Slot: 0
+    Oneblocker:
+      Name: '&8[&2One&aBlocker&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.oneblocker'
+      Store:
+        Page: 1
+        Slot: 1
+    Baron:
+      Name: '&8[&e&lBaron&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.Baron'
+      Store:
+        Page: 1
+        Slot: 2
+    Wizzard:
+      Name: '&8[&9&lWizzard&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.Wizzard'
+      Store:
+        Page: 1
+        Slot: 3
+    Bloodseeker:
+      Name: '&8[&c&lBloodseeker&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.Bloodseeker'
+      Store:
+        Page: 1
+        Slot: 4
+    King:
+      Name: '&8[&7&ka&6&lKing&7&ka&r&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.king'
+      Store:
+        Page: 1
+        Slot: 5
+    Queen:
+      Name: '&8[&7&ka&d&lQueen&7&ka&r&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.Queen'
+      Store:
+        Page: 1
+        Slot: 6
+    Outlaw:
+      Name: '&8[&7&ka&c&lOut&6&llaw&7&ka&r&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.Outlaw'
+      Store:
+        Page: 1
+        Slot: 7
+    Sword:
+      Name: '&8[&6🗡&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.Sword'
+      Store:
+        Page: 1
+        Slot: 8
+    Pickaxe:
+      Name: '&8[&b⛏&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.Pickaxe'
+      Store:
+        Page: 1
+        Slot: 9
+    Axe:
+      Name: '&8[&f🪓&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.Axe'
+      Store:
+        Page: 1
+        Slot: 10
+    Awman:
+      Name: '&8[&e&lAww &6&lMan&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.Awman'
+      Store:
+        Page: 1
+        Slot: 11
+    Valentine:
+      Name: '&8[&cValentine &4&l<3&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.Valentine'
+      Store:
+        Page: 1
+        Slot: 12
+    Ghostrider:
+      Name: '&8[&cGhost &7Rider&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.Ghostrider'
+      Store:
+        Page: 1
+        Slot: 13
+    Cute:
+      Name: '&8[&dCute&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.Cute'
+      Store:
+        Page: 1
+        Slot: 14
+    Fearless:
+      Name: '&8[&7Fearless&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.fearless'
+      Store:
+        Page: 1
+        Slot: 15
+    Gladiator:
+      Name: '&8[&f&k!&c&lGladiator&f&k!&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.Gladiator'
+      Store:
+        Page: 1
+        Slot: 16
+    Bloodthirsty:
+      Name: '&8[&c&k!&4&lBloodthirsty&c&k!&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.Bloodthirsty'
+      Store:
+        Page: 1
+        Slot: 17
+    Souls:
+      Name: '&8[&9&l&k!&5&lAbyss&9&l&k!&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.abyss'
+      Store:
+        Page: 1
+        Slot: 18
+    Challenger:
+      Name: '&8[&d&k!&5&lChallenger&d&k!&8]'
+      Description:
+        - '&7Acess this tag in &a/tags'
+      Price: 200
+      Preview:
+        Material: NAME_TAG
+        Amount: 1
+        Enchanted: true
+      Rewards:
+        Commands:
+          - 'lp user %player% permission set tag.Challenger'
+      Store:
+        Page: 1
+        Slot: 19
